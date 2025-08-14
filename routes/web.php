@@ -21,10 +21,26 @@ Route::get('/detail', function () {
     return view('pages.detail');
 })->name('detail');
 
-
 Route::get('/checkout', function () {
     return view('pages.checkout');
 })->name('checkout');
+
+Route::prefix('/payment', function () {
+    Route::get('/', function () {
+        return view('pages.payment');
+    })->name('payment');
+
+    Route::get('/success', function () {
+        return view('pages.payment.success');
+    })->name('payment.success');
+    Route::get('/pending', function () {
+        return view('pages.payment.pending');
+    })->name('payment.pending');
+
+    Route::get('/failed', function () {
+        return view('pages.payment.failed');
+    })->name('payment.failed');
+});
 
 // Route::get('/payment', function () {
 //     // return view('pages.payment');

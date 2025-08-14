@@ -64,12 +64,11 @@
             <script>
                 window.onload = function() {
                     snap.pay('{{ $snapToken }}', {
-                        onSuccess: r => window.location.href = '/success',
-                        onPending: r => window.location.href = '/pending',
-                        onError: r => window.location.href = '/failed',
+                    onSuccess: r => window.location.href = '/payment/success',
+                        onPending: r => window.location.href = '/payment/pending',
+                        onError: r => window.location.href = '/payment/failed',
                         onClose: () => {
-                            alert('Popup ditutup');
-                            window.history.back();
+                            window.location.href = '/';
                         }
                     });
                 };

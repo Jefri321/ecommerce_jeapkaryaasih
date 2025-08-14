@@ -2,7 +2,7 @@
 
     <div id="default-carousel" class="relative w-full rounded-2xl px-5" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div class="relative aspect-[16/9] w-full h-[500px] overflow-hidden rounded-lg">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="{{ asset('images/asset/slide-01.jpeg') }}"

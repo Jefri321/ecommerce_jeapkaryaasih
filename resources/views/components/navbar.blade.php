@@ -34,7 +34,7 @@
         <li>
           <a href="{{ route('login') }}">
             <button
-            class="flex items-center justify-center rounded-md bg-[#31b6e7] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
+          class="flex items-center justify-center rounded-md bg-[#31b6e7] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">
             Masuk
           </button>
           </a>
